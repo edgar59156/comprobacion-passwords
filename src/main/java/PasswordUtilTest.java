@@ -8,6 +8,10 @@ public class PasswordUtilTest {
 
     }
 
-
+@Test
+    public void strong_when_has_letters_numbers_and_symbols()
+{
+    assertEquals(STRONG,PasswordUtil.assesPassword("abcd123!"));
+}
 
 }
